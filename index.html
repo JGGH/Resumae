@@ -11,12 +11,97 @@
     <link rel="stylesheet" href="./styles/all.min.css">
     <link rel="stylesheet" href="./styles/live-resume.css">
 </head>
+<!--<style>
+    .share-button {
+        width: 150px;
+        /*height: 80px;*/
+        background: #dfe6e9;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: .3s linear;
+    }
+
+        .share-button:hover {
+            transform: scale(1.1);
+        }
+
+        .share-button span {
+            position: absolute;
+            width: 100%;
+            /*height: 100%;*/
+            background: #2d3436;
+            color: #f1f1f1;
+            text-align: center;
+            line-height: 80px;
+            z-index: 999;
+            transition: .6s linear;
+            border-radius: 40px;
+        }
+
+        .share-button:hover span {
+            transform: translateX(-100%);
+            transition-delay: .3s;
+        }
+
+        .share-button a {
+            flex: 1;
+            font-size: 26px;
+            color: #2d3436;
+            text-align: center;
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: 0.3s linear;
+        }
+
+        .share-button:hover a {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .share-button a:nth-of-type(1) {
+            transition-delay: 1s;
+        }
+
+        .share-button a:nth-of-type(2) {
+            transition-delay: 0.8s;
+        }
+
+        .share-button a:nth-of-type(3) {
+            transition-delay: 0.6s;
+        }
+
+        .share-button a:nth-of-type(4) {
+            transition-delay: 0.4s;
+        }
+  </style>-->
 <body>
     <header>
-        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto">
-            <img src="./home/share.svg" alt="share" class="btn-img">
-            SHARE
+        <div class="share-button" style="float:left">
+            <span><i class="fas fa-share-alt"></i> SHARE</span>
+            <!--<a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://jggh.github.io/Resumae/" target="_blank" >
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://jggh.github.io/Resumae/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://jggh.github.io/Resumae/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="http://www.reddit.com/submit?url==https://jggh.github.io/Resumae/" target="_blank"><i class="fab fa-reddit"></i></a>
+
+
+        </div>
+        <button class="btn btn-white btn-share ml-auto mr-3 mr-md-auto" style="visibility:hidden">
+            <!--<img src="./home/share.svg" alt="share" class="btn-img">
+            SHARE-->
         </button>
+
         <!-- <nav class="collapsible-nav show" id="collapsible-nav"> -->
         <nav class="collapsible-nav hide" id="collapsible-nav">
             <a href="./index.html" class="nav-link active">HOME</a>
@@ -28,7 +113,7 @@
         <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav" data-target="collapsible-nav"><img src="./home/hamburger.svg" alt="hamburger"></button>
     </header>
     <div class="content-wrapper">
-        <aside style="min-width:20%">
+        <aside style="min-width:28%">
             <div class="profile-img-wrapper">
                 <img src="./home/profilephoto.jpg" alt="profile">
             </div>
@@ -38,19 +123,16 @@
             </div>
             <nav class="social-links">
                 <!-- https://simplesharebuttons.com/html-share-buttons/ -->
-                <a href="https://www.facebook.com/sharer/sharer.php?
-							 u=https://www.bootstrapdash.com/"
-                   target="_blank" class="social-link">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://jggh.github.io/Resumae/" target="_blank" class="social-link">
                     <i class="fab fa-facebook-f"></i>
-                    <!-- <img src="/images/social-buttons/Facebook.png"> -->
                 </a>
                 <!-- <a href="https://www.facebook.com/jaiganesh" class="social-link"><i class="fab fa-facebook-f"></i></a> -->
-                <a href="https://twitter.com/intent/tweet?url=https://www.bootstrapdash.com/" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=https://jggh.github.io/Resumae/" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
 
 
                 <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-behance"></i></a> -->
-                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.bootstrapdash.com/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://jggh.github.io/Resumae/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="http://www.reddit.com/submit?url==https://jggh.github.io/Resumae/" class="social-link" target="_blank"><i class="fab fa-reddit"></i></a>
             </nav>
             <div class="widget">
                 <h5 class="widget-title">personal information</h5>
@@ -59,7 +141,7 @@
                     <p>Nationality : India</p>
                     <p>Location : Chennai, India</p>
                     <p>PHONE : +91 80561 60868</p>
-                    <p>WEBSITE : www.example.com</p>
+                    <p>WEBSITE : https://jggh.github.io/Resumae/ </p>
                     <p>BIRTHDAY : 30 March 1981</p>
                     <button class="btn btn-download-cv btn-primary rounded-pill"> <img src="./Home/download.svg" alt="download" class="btn-img">DOWNLOAD CV </button>
                 </div>
@@ -73,23 +155,12 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="widget card"> -->
-            <!-- <div class="card-body"> -->
-            <!-- <div class="widget-content"> -->
-            <!-- <h5 class="widget-title card-title">INTERESTS</h5> -->
-            <!-- <p>Video games</p> -->
-            <!-- <p>Finance</p> -->
-            <!-- <p>Basketball</p> -->
-            <!-- <p>Theatre</p> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
         </aside>
         <main id="test">
             <section class="intro-section">
                 <h2 class="section-title">PROFILE</h2>
                 <p>
-                    Leading Software Developer and Engineer with 9+ years of work experience building web/desktop applications. Proficient in full-stack development.
+                    Leading Full Stack Software Developer and Engineer with 10+ years of work experience building web/desktop applications. Proficient in full-stack development.
                     I enjoy coding, testing and integration.
                     Seeking a new challenges and opportunities to leverage
                 </p>
@@ -101,15 +172,15 @@
                         <h2 class="section-title">Experience Summary</h2>
                         <ul>
                             <li>
-                                Sr. Developer with 9+ years’ of relevant experience in full life-cycle development, including analysis, design, development, deployment, testing, documentation, implementation, and maintenance of application software in web-based environment and client/server architecture.
+                                Sr. Developer with 10+ years’ of relevant experience in full life-cycle development, including analysis, design, development, deployment, testing, documentation, implementation, and maintenance of application software in web-based environment and client/server architecture.
                             </li>
                             <li>Experience in designing and developing object-oriented software applications, ranging from Internet and intranet applications.</li>
                             <li>Experience in implementing c# design patterns, such as Singleton, Decorator, Factory, Adapter, Template, Façade, Observer, Command patterns etc. and Functional Programming.</li>
                             <li>Worked on MVC, MVVM and CQRS architectural patterns</li>
                             <li>Excellent analytical, problem solving, communication, and team skills.</li>
                             <li>Good knowledge in DI – Structure Map, log4net error logging, Dapper ORM and Object Oriented JavaScript using prototype inheritance</li>
-                            <li>Excellent knowledge in Token Authentication for  REST Web API, OAuth 2.0</li>
-                            <li>Good knowledge in AngularJs,React.js, TypeScript.js, Node.js, ES6, Asynchronous programming </li>
+                            <li>Excellent knowledge in all Authentication schemes web App, REST Web API Token Authentication, OAuth 2.0 and implemented social media authentication for Facebook, Apple</li>
+                            <li>Strong knowledge in AngularJs, React.js, TypeScript.js, Node.js, ES6, Asynchronous programming. Good knowledge in Babel transpiler and Web Pack tools</li>
 
                         </ul>
                     </div>
@@ -128,13 +199,20 @@
                             </li>
                             <li class="time-line-item">
                                 <span class="badge badge-primary">Cognizant Technology Solutions</span>
-                                <h6 class="time-line-item-title">Associate</h6>
+                                <h6 class="time-line-item-title">Associate Projects</h6>
                                 <p class="time-line-item-subtitle"><strong>July 2010 to May 2020</strong></p>
                                 <!-- <p class="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla -->
                                 <!-- vitae, interdum sed -->
                                 <!-- tortor.</p> -->
                             </li>
-
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">Freelancer</span>
+                                <h6 class="time-line-item-title">Worked as a parttime Freelancer/Managed Own Business</h6>
+                                <p class="time-line-item-subtitle"><strong>July 2005 to June 2010</strong></p>
+                                <!-- <p class="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla -->
+                                <!-- vitae, interdum sed -->
+                                <!-- tortor.</p> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -215,7 +293,115 @@
             <section class="services-section">
                 <h6 class="section-subtitle">WHAT I DO</h6>
                 <h2 class="section-title">Relevant Project Experience</h2>
+                <style>
+                    .atrolemax {
+                        display: block;
+                    }
+
+                    .atrolemin {
+                        display: none;
+                    }
+
+                    @media(max-width:992px) {
+                        .atrolemax {
+                            display: none;
+                        }
+
+                        .atrolemin {
+                            display: block;
+                        }
+                    }
+                </style>
+                <div class="row time-line-item-title"><div class="col-lg-3">Roles and Responsibilities</div><div class="col-lg-9 atrolemax"></div></div>
+
+                <!--<div class="row col-lg-12 atrolemin">
+                    <div class="row col-lg-12 time-line-item-title" style="font-size:18px">Roles and Responsibilities</div>
+                    <br />
+                    <div class="row col-lg-12 time-line-item-title">Software Engineer Developer &nbsp;<span class="time-line-item-subtitle">(2016 - present)</span></div>
+                </div>-->
+
+                <div class="row col-lg-12">
+                    <div class="row col-lg-12 time-line-item-title" style="font-size:18px"></div>
+                    <br />
+                    <div class="row col-lg-12 time-line-item-title">Senior Software Engineer &nbsp;<p class="time-line-item-subtitle">(2016 - present)</p></div>
+                </div>
+
                 <div class="row">
+                    <div class="col-lg-3 time-line-item-title"></div><div class="col-lg-9">
+                        <ul>
+                            <li>
+                                Developed image/css/html file upload to AWS cloud front CDN to reflect in website UI without production move which enables Marketing team to upload image/html files.
+                            </li>
+                            <li>
+                                Responsible for involving in coding in all the layers, participated in creating database schema with normalization rules and created clustered and non-clustered indexes to appropriate columns to improve performance
+                            </li>
+                            <li>
+                                Developed database layer by using LINQ to SQL, Created WCF service application and provided end point with WS Http Binding Used session mode as per session implementation.
+                            </li>
+                            <li>
+                                Experienced in using automapper library to transfer the data between layers. Experienced in using MS visual studio unit testing project
+                            </li>
+                            <li>
+                                Created various SSIS packages for ETL operations from various systems SQL Server, Excel, flat files
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row col-lg-12">
+                    <div class="row col-lg-12 time-line-item-title" style="font-size:18px"></div>
+                    <br />
+                    <div class="row col-lg-12 time-line-item-title">Associate Projects &nbsp;<p class="time-line-item-subtitle">(20013 - 2016)</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 time-line-item-title"></div><div class="col-lg-9">
+                        <ul>
+                            <li>
+                                Developed image/css/html file upload to AWS cloud front CDN to reflect in website UI without production move which enables Marketing team to upload image/html files.
+                            </li>
+                            <li>
+                                Responsible for involving in coding in all the layers, participated in creating database schema with normalization rules and created clustered and non-clustered indexes to appropriate columns to improve performance
+                            </li>
+                            <li>
+                                Developed database layer by using LINQ to SQL, Created WCF service application and provided end point with WS Http Binding Used session mode as per session implementation.
+                            </li>
+                            <li>
+                                Experienced in using automapper library to transfer the data between layers. Experienced in using MS visual studio unit testing project
+                            </li>
+                            <li>
+                                Created various SSIS packages for ETL operations from various systems SQL Server, Excel, flat files
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row col-lg-12">
+                    <div class="row col-lg-12 time-line-item-title" style="font-size:18px"></div>
+                    <br />
+                    <div class="row col-lg-12 time-line-item-title">Program Analyst &nbsp;<p class="time-line-item-subtitle">(20010 - 2013)</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 time-line-item-title"></div><div class="col-lg-9">
+                        <ul>
+                            <li>
+                                Developed image/css/html file upload to AWS cloud front CDN to reflect in website UI without production move which enables Marketing team to upload image/html files.
+                            </li>
+                            <li>
+                                Responsible for involving in coding in all the layers, participated in creating database schema with normalization rules and created clustered and non-clustered indexes to appropriate columns to improve performance
+                            </li>
+                            <li>
+                                Developed database layer by using LINQ to SQL, Created WCF service application and provided end point with WS Http Binding Used session mode as per session implementation.
+                            </li>
+                            <li>
+                                Experienced in using automapper library to transfer the data between layers. Experienced in using MS visual studio unit testing project
+                            </li>
+                            <li>
+                                Created various SSIS packages for ETL operations from various systems SQL Server, Excel, flat files
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+
                     <div class="media service-card col-lg-6">
                         <div class="service-icon">
                             <img src="./home/001-target.svg" alt="target">
@@ -299,10 +485,10 @@
 
         </main>
     </div>
-    <script src="./scripts/jquery.min.js.download"></script>
-    <script src="./scripts/popper-base.min.js.download"></script>
-    <script src="./scripts/bootstrap.min.js.download"></script>
-    <script src="./scripts/live-resume.js.download"></script>
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/popper-base.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/live-resume.js"></script>
 
 
 </body>

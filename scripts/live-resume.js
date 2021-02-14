@@ -1,4 +1,4 @@
-$('[data-toggle="collapsible-nav"]').on('click', function(e){
+$('[data-toggle="collapsible-nav"]').on('click', function (e) {
     var target = ($(this).data('target'));
     $('#' + target).toggleClass('show');
 });

@@ -14,10 +14,19 @@
 
 <body>
     <header>
-        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto">
-            <img src="./home/share.svg" alt="share" class="btn-img">
-            SHARE
+        <div class="share-button" style="float:left">
+            <span><i class="fas fa-share-alt"></i> SHARE</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button class="btn btn-white btn-share ml-auto mr-3 mr-md-auto" style="visibility:hidden">
         </button>
+        <!--<button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto">
+        <img src="./home/share.svg" alt="share" class="btn-img">
+        SHARE
+    </button>-->
         <nav class="collapsible-nav hide" id="collapsible-nav">
             <a href="./index.html" class="nav-link">HOME</a>
             <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/resume.html" class="nav-link">RESUME</a> -->
@@ -28,55 +37,7 @@
         <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav" data-target="collapsible-nav"><img src="./contact/hamburger.svg" alt="hamburger"></button>
     </header>
     <div class="content-wrapper">
-        <!-- <aside> -->
-        <!-- <div class="profile-img-wrapper"> -->
-        <!-- <img src="./contact/Profile.png" alt="profile"> -->
-        <!-- </div> -->
-        <!-- <h1 class="profile-name">Daisy Murphy</h1> -->
-        <!-- <div class="text-center"> -->
-        <!-- <span class="badge badge-white badge-pill profile-designation">UI / UX Designer</span> -->
-        <!-- </div> -->
-        <!-- <nav class="social-links"> -->
-        <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/contact.html#!" class="social-link"><i class="fab fa-facebook-f"></i></a> -->
-        <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/contact.html#!" class="social-link"><i class="fab fa-twitter"></i></a> -->
-        <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/contact.html#!" class="social-link"><i class="fab fa-behance"></i></a> -->
-        <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/contact.html#!" class="social-link"><i class="fab fa-dribbble"></i></a> -->
-        <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/contact.html#!" class="social-link"><i class="fab fa-github"></i></a> -->
-        <!-- </nav> -->
-        <!-- <div class="widget"> -->
-        <!-- <h5 class="widget-title">personal information</h5> -->
-        <!-- <div class="widget-content"> -->
-        <!-- <p>BIRTHDAY : 15 April 1990</p> -->
-        <!-- <p>WEBSITE : www.example.com</p> -->
-        <!-- <p>PHONE : +1 123 000 4444</p> -->
-        <!-- <p>MAIL : your@example.com</p> -->
-        <!-- <p>Location : California, USA</p> -->
-        <!-- <button class="btn btn-download-cv btn-primary rounded-pill"> <img src="./contact/download.svg" alt="download" class="btn-img">DOWNLOAD CV </button> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- <div class="widget card"> -->
-        <!-- <div class="card-body"> -->
-        <!-- <div class="widget-content"> -->
-        <!-- <h5 class="widget-title card-title">LANGUAGES</h5> -->
-        <!-- <p>English : native</p> -->
-        <!-- <p>Spanish : fluent</p> -->
-        <!-- <p>Italian : fluent</p> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- <div class="widget card"> -->
-        <!-- <div class="card-body"> -->
-        <!-- <div class="widget-content"> -->
-        <!-- <h5 class="widget-title card-title">INTERESTS</h5> -->
-        <!-- <p>Video games</p> -->
-        <!-- <p>Finance</p> -->
-        <!-- <p>Basketball</p> -->
-        <!-- <p>Theatre</p> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- </aside> -->
-        <aside style="min-width:20%">
+        <aside style="min-width:28%">
             <div class="profile-img-wrapper">
                 <img src="./home/profilephoto.jpg" alt="profile">
             </div>
@@ -84,12 +45,28 @@
             <div class="text-center">
                 <span class="badge badge-white badge-pill profile-designation">Full Stack Developer</span>
             </div>
-            <nav class="social-links">
-                <a href="https://www.facebook.com/jaiganesh" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <!--<nav class="social-links">
+                <a href="https://www.facebook.com/jaiganesh" class="social-link"><i class="fab fa-facebook-f"></i></a>-->
                 <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-twitter"></i></a> -->
                 <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-behance"></i></a> -->
-                <a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <!--<a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>-->
+            <nav class="social-links">
+                <!-- https://simplesharebuttons.com/html-share-buttons/ -->
+                <a href="https://www.facebook.com/sharer/sharer.php?
+							 u=https://jggh.github.io/Resumae/"
+                   target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <!-- <img src="/images/social-buttons/Facebook.png"> -->
+                </a>
+                <!-- <a href="https://www.facebook.com/jaiganesh" class="social-link"><i class="fab fa-facebook-f"></i></a> -->
+                <a href="https://twitter.com/intent/tweet?url=https://jggh.github.io/Resumae/" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+
+
+                <!-- <a href="https://www.bootstrapdash.com/demo/live-resume/index.html#!" class="social-link"><i class="fab fa-behance"></i></a> -->
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://jggh.github.io/Resumae/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="http://www.reddit.com/submit?url==https://jggh.github.io/Resumae/" class="social-link" target="_blank"><i class="fab fa-reddit"></i></a>
             </nav>
             <div class="widget">
                 <h5 class="widget-title">personal information</h5>
@@ -98,7 +75,7 @@
                     <p>Nationality : India</p>
                     <p>Location : Chennai, India</p>
                     <p>PHONE : +91 80561 60868</p>
-                    <p>WEBSITE : www.example.com</p>
+                    <p>WEBSITE : https://jggh.github.io/Resumae/ </p>
                     <p>BIRTHDAY : 30 March 1981</p>
                     <button class="btn btn-download-cv btn-primary rounded-pill"> <img src="./Home/download.svg" alt="download" class="btn-img">DOWNLOAD CV </button>
                 </div>
@@ -112,17 +89,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="widget card"> -->
-            <!-- <div class="card-body"> -->
-            <!-- <div class="widget-content"> -->
-            <!-- <h5 class="widget-title card-title">INTERESTS</h5> -->
-            <!-- <p>Video games</p> -->
-            <!-- <p>Finance</p> -->
-            <!-- <p>Basketball</p> -->
-            <!-- <p>Theatre</p> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
         </aside>
         <main>
             <section class="contact-section">
@@ -136,7 +102,7 @@
                     </div>
                     <div class="contact-card">
                         <h6 class="contact-card-title">Email me</h6>
-                        <p class="contact-card-content">jaicharms81@yahoo.com</p>
+                        <p class="contact-card-content"><a href="mailto:jaicharms81@yahoo.com">jaicharms81@yahoo.com</a></p>
                     </div>
                 </div>
 
@@ -174,11 +140,11 @@
             </footer>
         </main>
     </div>
-    <script src="./scripts/jquery.min.js.download"></script>
+    <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/popper-base.min.js.download"></script>
     <script src="./scripts/bootstrap.min.js.download"></script>
     <script src="./scripts/jq.entry.min.js.download"></script>
-    <script src="./scripts/live-resume.js.download"></script>
+    <script src="./scripts/live-resume.js"></script>
 
 
 </body>
