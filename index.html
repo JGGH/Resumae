@@ -6,6 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./home/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Jai Ganesh Home</title>
     <link href="./styles/css.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/all.min.css">
@@ -80,8 +81,12 @@
                     <p>PHONE : +91 80561 60868</p>
                     <p>WEBSITE : <a href="https://jggh.github.io/Resumae/" target="_blank">https://jggh.github.io/Resumae/</a> </p>
                     <p>BIRTHDAY : 30 March 1981</p>
-                    <button class="btn btn-download-cv btn-primary rounded-pill"> <img src="./Home/download.svg" alt="download" class="btn-img">DOWNLOAD CV </button>
+                    <button class="btn btn-download-cv btn-primary rounded-pill" id="dld"><img src="./home/download.svg" alt="download" class="btn-img">DOWNLOAD CV</button>
+                    <a id="link" href="./home/N_M_10_d.docx" style="display:none" >
+                        Download this file
+                    </a>
                 </div>
+
             </div>
             <div class="widget card">
                 <div class="card-body">
@@ -305,7 +310,7 @@
                                 Worked on front end framework in Angularjs.
                             </li>
                             <li>
-                              Implemented logging to capture the exception occurred in Service.
+                                Implemented logging to capture the exception occurred in Service.
                             </li>
                             <li>
                                 Created various SSIS packages for ETL operations from various systems SQL Server, Excel, flat files
@@ -432,5 +437,6 @@
     <script src="./scripts/popper-base.min.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
     <script src="./scripts/live-resume.js"></script>
+
 </body>
 </html>

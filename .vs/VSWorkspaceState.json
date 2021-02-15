@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\scripts",
+    "\\styles",
     "\\webfonts"
   ],
-  "SelectedNode": "\\contact.html",
+  "SelectedNode": "\\scripts\\live-resume.js",
   "PreviewInSolutionExplorer": false
 }
