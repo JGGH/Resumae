@@ -12045,5 +12045,6 @@ main .location-section {
 .sticky {
     position: sticky;
     top: 0;
-    width: 100%
+    width: 100%;
+    border-bottom:grey solid;
 }
