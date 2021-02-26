@@ -101,3 +101,5 @@ function myFunction() {
 /*header stick*/
 /*download*/
 $('#dld').click(function () { $('#link')[0].click(); });
+//fbcomments
+
